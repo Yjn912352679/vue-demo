@@ -2,7 +2,7 @@ var path = require('path')
 var webpack = require("webpack");
 var htmlWebpackPlugin = require('html-webpack-plugin')
 var VueLoaderPlugin = require('vue-loader/lib/plugin')
-// var styleVariables = require('./src/main.js')
+
 module.exports = {
     entry: path.join(__dirname, './src/main.js'),
     output: {
