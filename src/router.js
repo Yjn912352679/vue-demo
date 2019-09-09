@@ -41,7 +41,6 @@ var router = new VueRouter({
     
     { path: "/shops/:shopsid", components: {default:shops},
       children: [{ path :"orderFood",components: {default:shops , shopsContainer:orderFood}},{path :"appraise",components:{default:shops , shopsContainer:appraise}},{path :"store",components:{default:shops , shopsContainer : store}}]},
-    // { path: "/home/:Goods", component: GoodsInfo, name: "GoodsInfo" },
     { path: "/home/:Goods", components: {default:GoodsInfo,Bottom: tabBottom2}, name: "GoodsInfo" },
     { path: "/shopcar", components: {default: tabTop,Main: shopcar,Bottom: tabBottom2}},
   ],
