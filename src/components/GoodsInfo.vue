@@ -4,9 +4,7 @@
         <div class="container-in" ref="containerin">
           <!-- 卡片组件应用 -->
           <card :goodsInfo="currentGoods"></card>
-          <!-- <card></card>
-          <card></card> -->
-          <!-- <span @click="dianwo">点我</span> -->
+         
 
           <!-- 无实际作用  只是占高度  使得整个页面能完整显示 -->
           <div class="empty"></div>

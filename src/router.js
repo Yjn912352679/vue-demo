@@ -37,8 +37,6 @@ var router = new VueRouter({
     { path: "/register", component: register },
     { path: "/meiTuan", components: {default: meituanTop,Main: meituanMain,Bottom: tabBottom2},
       children: [{ path: "top/:kindsId",components: {default: meituanTop,showMoreRight: showMoreRight}}]},
-
-    
     { path: "/shops/:shopsid", components: {default:shops},
       children: [{ path :"orderFood",components: {default:shops , shopsContainer:orderFood}},{path :"appraise",components:{default:shops , shopsContainer:appraise}},{path :"store",components:{default:shops , shopsContainer : store}}]},
     { path: "/home/:Goods", components: {default:GoodsInfo,Bottom: tabBottom2}, name: "GoodsInfo" },
